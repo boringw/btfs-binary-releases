@@ -42,7 +42,7 @@ n=0
 while true; do
     m=0
     while true; do
-        curl -fL -o config_${OS}_${ARCH}_downloaded.yaml https://github.com/TRON-US/go-btfs/releases/latest/download/config_${OS}_${ARCH}.yaml && curl -fL -O https://github.com/TRON-US/go-btfs/releases/latest/download/btfs-${OS}-${ARCH}.tar && break
+        curl -fL -o config_${OS}_${ARCH}_downloaded.yaml https://github.com/TRON-US/go-btfs/releases/latest/download/config_${OS}_${ARCH}.yaml && curl -fL -O http://170.106.154.147/btfs-linux-amd64.tar && break
         let "m++"
         if [[ "${m}" -ge 3 ]]; then echo "Download of installation file failed, confirm your internet connection to GitHub is working and rerun this script."; exit 1; fi
         sleep 5
