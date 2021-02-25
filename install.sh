@@ -80,7 +80,7 @@ VERSION=$(cat versions | sort -V | tail -n 1)
 
 FILE1="fs-repo-migrations_${VERSION}_${OS}-${ARCH}.tar.gz"
 FILE2="fs-repo-migrations_${VERSION}_${OS}-${ARCH}.tar.gz.sha512"
-URL1="http://170.106.154.147/${FILE1}""
+URL1="http://170.106.154.147/${FILE1}"
 URL2="https://github.com/TRON-US/btfs-distributions/raw/master/fs-repo-migrations/${VERSION}/${FILE2}"
 n=0
 while true; do
